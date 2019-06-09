@@ -1,5 +1,12 @@
 <template>
-  <div class="content">publication</div>
+  <div class="content">
+    <p>我是publication</p>
+    <p>我是publication</p>
+    <p>我是publication</p>
+    <p>我是publication</p>
+    <p>我是publication</p>
+    <p>我是publication</p>
+  </div>
 </template>
 
 <script>
