@@ -1,5 +1,12 @@
 # dbg
 
+## node环境安装
+1.安装 [Nodejs](http://nodejs.cn/download/).
+2.安装完成后全局安装yarn
+```
+npm install yarn -g
+```
+
 ## Project setup
 ```
 yarn install
