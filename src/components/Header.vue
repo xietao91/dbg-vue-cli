@@ -46,5 +46,6 @@ export default {
   z-index: 2;
   display: flex;
   justify-content: space-around;
+  top: 0;
 }
 </style>

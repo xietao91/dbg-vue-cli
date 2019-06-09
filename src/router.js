@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Layout from './layout/Layout.vue'
 import Home from './views/Home.vue'
 import Contact from './views/Contact.vue'
 import News from './views/News.vue'
@@ -13,30 +14,38 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      component: Layout,
+      redirect: '/home',
+      children: [
+        {
+          path: 'home',
+          name: 'home',
+          component: Home
+        },
+        {
+          path: 'people',
+          name: 'people',
+          component: People
+        }, {
+          path: 'news',
+          name: 'news',
+          component: News
+        }, {
+          path: 'research',
+          name: 'research',
+          component: Research
+        }, {
+          path: 'publication',
+          name: 'publication',
+          component: Publication
+        }, {
+          path: 'contact',
+          name: 'contact',
+          component: Contact
+        },
+      ],
     },
-    {
-      path: 'people',
-      name: 'people',
-      component: People
-    }, {
-      path: 'news',
-      name: 'news',
-      component: News
-    }, {
-      path: 'research',
-      name: 'research',
-      component: Research
-    }, {
-      path: 'publication',
-      name: 'publication',
-      component: Publication
-    }, {
-      path: 'contact',
-      name: 'contact',
-      component: Contact
-    },
+
     // {
     //   path: '/about',
     //   name: 'about',
