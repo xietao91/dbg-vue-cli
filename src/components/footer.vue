@@ -13,7 +13,7 @@
           >定时任务补偿</el-tab-pane
         >
     </el-tabs>-->
-    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="true">
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
       <el-menu-item index="home">Home</el-menu-item>
       <el-menu-item index="people">People</el-menu-item>
       <el-menu-item index="news">News</el-menu-item>
